@@ -26,6 +26,4 @@ $(document).ready(function()
     addCaptions();
     seen = 1;
   }
-
-  $('.tab-menu.menu .item').tab();
 });
