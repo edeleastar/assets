@@ -2,7 +2,7 @@
 function addCaptions() {
   var images = $(".moodle-book img");
   jQuery.each(images, function(i)  {
-    if((images[i].alt).length > 0) 
+    if((images[i].alt).length > 0)
     {
       var div_img = $(document.createElement("div")).addClass("ui segment");
       $(images[i]).wrap(div_img);
@@ -17,12 +17,12 @@ function addCaptions() {
 seen = 0;
 
 $(document).ready(function()
-{ 
+{
   if (seen == 0)
-  { 
+  {
     // not loaded before - so do the restyling once (need to moodle book print)
-    $(".moodkle-book img").addClass ("ui image");
-    $(".moodle-book  pre").addClass ("ui stacked segment");
+    $(".moodle-book img").addClass ("ui image");
+    $(".moodle-book pre").addClass ("ui stacked segment");
     addCaptions();
     seen = 1;
   }
